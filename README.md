@@ -25,5 +25,7 @@ Runtime complexity of convertToAdjList: $O(n^2)$
 
 Runtime complexity of converToAdjMatrix: $O(n^2)$
 
+Where n is the number of nodes.
+
 Reasoning:
 The runtime complexity of both conversions is $O(n^2)$ because in order to convert properly, each function needs to iterate through both dimensions with each dimension being $O(n)$ time complexity. In both cases they are dependent on the number of vertices in the graph.
