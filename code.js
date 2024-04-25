@@ -9,6 +9,7 @@ function convertToAdjList(adjMatrix)
     for (var i = 0; i < adjMatrix.length; i++) 
     {
         var array = [];
+
         for (var j = 0; j < adjMatrix.length; j++) 
         {
             if (adjMatrix[i][j] == 1) 
@@ -50,3 +51,32 @@ function convertToAdjList(adjMatrix)
     return adjList;
 }
 */
+
+// Bonus function:
+function convertToAdjMatrix(adjList){
+    var adjMatrix = [];
+
+    for(i = 0; i < adjList.length; i++)
+    {
+        var temp = [];
+        var array = adjList[i];
+        var arrayPos = 0;
+
+        for(j = 0; j < adjList.length; j++)
+        {
+            if(j == array[arrayPos])
+            {
+                temp.push(1);
+            }
+            else
+            {
+                temp.push(0);
+            }
+            arrayPos++;
+        }
+
+        adjMatrix.push(temp);
+    }
+
+    return adjMatrix;
+}
