@@ -1,10 +1,13 @@
 // used examples from geeks for geeks
 // https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/
 
-function convertToAdjList(adjMatrix) 
+function convertToAdjList(adjMatrix)
 {
     var list = new Array(adjMatrix.length);
-
+    if (adjMatrix.length == 0)
+    {
+        return [];
+    }
     for (let i = 0; i < adjMatrix.length; i++) 
     {
         for (let j = 0; j < adjMatrix[i].length; j++) 
@@ -21,12 +24,3 @@ function convertToAdjList(adjMatrix)
     }
     return list;
 }
-
-
-var input = [];
-var input2 = [[0, 0, 1], [0, 0, 1], [1, 1, 0]]
-
-var output = convertToAdjList(input);
-var output2 = convertToAdjList(input2);
-console.log(output);
-console.log(output2);
