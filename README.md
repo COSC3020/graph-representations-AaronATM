@@ -21,11 +21,9 @@ most important part. Add your answer to this markdown file.
 Implement a function to convert an adjacency list to an adjacency matrix and
 analyze it as above.
 
-Runtime complexity of convertToAdjList: $O(n^2)$
+Runtime complexity of convertToAdjList: $O(n^2)$ where n is the number of nodes (adjMatrix.length)
 
-Runtime complexity of converToAdjMatrix: $O(n^2)$
-
-Where n is the number of nodes.
+Runtime complexity of converToAdjMatrix: $O(n^2)$ where n is the number of nodes (adjList.length)
 
 Reasoning:
 The runtime complexity of both conversions is $O(n^2)$ because in order to convert properly, each function needs to iterate through both dimensions with each dimension being $O(n)$ time complexity. In both cases they are dependent on the number of vertices in the graph.
