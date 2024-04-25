@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/hFs1pb0z)
 # Graph Representations
 
 Implement a function that converts an adjacency matrix to an adjacency list for
@@ -19,3 +20,10 @@ most important part. Add your answer to this markdown file.
 
 Implement a function to convert an adjacency list to an adjacency matrix and
 analyze it as above.
+
+Runtime complexity of convertToAdjList: $O(n^2)$ where n is the number of nodes (adjMatrix.length)
+
+Runtime complexity of converToAdjMatrix: $O(n^2)$ where n is the number of nodes (adjList.length)
+
+Reasoning:
+The runtime complexity of both conversions is $O(n^2)$ because in order to convert properly, each function needs to iterate through both dimensions with each dimension being $O(n)$ time complexity. In both cases they are dependent on the number of vertices in the graph.
